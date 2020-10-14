@@ -1,0 +1,23 @@
+{
+  "name": "express-postgres-demo",
+  "version": "0.0.0",
+  "private": true,
+  "scripts": {
+    "start": "node ./bin/www",
+    "dev": "nodemon -r dotenv/config ./bin/www",
+    "createTable": "node -r dotenv/config db/scripts/createTable.js",
+    "dropTable": "node -r dotenv/config db/scripts/dropTable.js",
+    "reinitialiseTable": "node -r dotenv/config db/scripts/reinitialiseTable.js"
+  },
+  "dependencies": {
+    "cookie-parser": "~1.4.4",
+    "debug": "~2.6.9",
+    "express": "~4.16.1",
+    "morgan": "~1.9.1",
+    "pg": "^8.4.1"
+  },
+  "devDependencies": {
+    "dotenv": "^8.2.0",
+    "nodemon": "^2.0.5"
+  }
+}
